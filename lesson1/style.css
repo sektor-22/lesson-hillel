@@ -1,3 +1,5 @@
 body{
-    background-color: rgb(179, 114, 114);
+    background-image: url('restyle.png');
+    background-size: cover;
+   
 }

@@ -1435,15 +1435,8 @@ const todos = [
   ];
 
 
-    let usersWeb = users.filter(
-      (user) => {
-         return user.company.bs.includes('web')
-      });
-  let userTodo = todos.filter((elem) => {
-      if (elem.userId === usersWeb[0].id && elem.completed === false) {
-          return elem
-      }
-  })
+  let usersWeb = users.filter( user => user.company.bs.includes('web'));
 
+  let userTodo = todos.filter(elem => elem.userId === usersWeb[0].id && elem.completed === false)
 console.log(usersWeb);
 console.log(userTodo);

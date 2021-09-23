@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+body {
+    display: grid;
+    place-items: center;
+}
+section {
+    width: 600px;
+}
+input, button {
+    width: 100%;
+    padding: .25rem 1rem;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    flex: 0 0 66%;
+    margin: 0 1rem;
+}
+input:focus-visible {
+    outline: none;
+    border: 2px solid black;
+}
+
+.add-new-item-wrapper {
+    padding: 1rem;
+    background-color: #707070;
+    display: flex;
+}
+
+.items-list div {
+    padding: 1rem;
+    background-color: #d6d2d2;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+}
+
+.items-list div:last-child {
+    border-bottom: none;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+.items-list div p {
+    flex: 0 0 50%;
+}
